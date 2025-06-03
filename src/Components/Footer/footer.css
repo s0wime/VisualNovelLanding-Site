@@ -1,0 +1,9 @@
+.footer {
+
+}
+
+.copy_right {
+    width: clamp(150px, 23vw, 500px);
+    align-self: flex-end;
+    margin-top: auto;
+}

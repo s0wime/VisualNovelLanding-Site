@@ -1,0 +1,37 @@
+.tryForFreeBtn {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: #aba9de;
+    border: none;
+    border-radius: 80px;
+    width: clamp(9vw, 12vw, 14vw);
+    height: clamp(2vh, 3vw, 6vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+    box-shadow: 0 2px 14px #0002;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+.tryForFreeBtn:hover,
+.tryForFreeBtn:focus {
+    background: #c4c2ed;
+    box-shadow: 0 4px 24px #b7b7ff66;
+    transform: scale(1.03);
+    outline: none;
+}
+
+@media screen and (max-width: 850px) {
+    .tryForFreeBtn{
+        width: 40vw;
+        max-width: 200px;
+        height: auto;
+        min-height: 50px;
+        font-size: 12px;
+    }
+}

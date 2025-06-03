@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap');
+
+
+.finalPageMainPart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;
+    height: 100%;
+    width: 100vw;
+    padding: clamp(1.5rem, 3vw, 4rem);
+    gap: clamp(1.5rem, 3vw, 4rem);
+
+}
+
+.finalTextWrapper {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoResultPage {
+    width: clamp(25vw, 26vw, 30vw);
+    border-radius: 25px;
+}
+
+.perfectMatch {
+    font-family: 'Cinzel';
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(2rem, 6vh, 7vh);
+    color: #20165C;
+    margin-bottom: clamp(2.5rem, 3vw, 2.5rem);
+    text-shadow: 0px 5px 6px rgb(211, 211, 222);
+    letter-spacing: 0.02em;
+}
+
+.petal {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 4vh);
+    color: white;
+    margin-bottom: 4vh;
+    text-shadow: 0px 5px 6px rgb(90, 90, 213);
+    letter-spacing: 0.02em;
+}
+
+.finalText {
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    height: clamp(10vh, 12vw, 400px);
+    text-align: center;
+    border-radius: 55px;
+    background-color: #cecadb;
+    font-size: clamp(0.4vw, 1vw, 1.2vw);
+    font-family: 'Brawler', cursive;
+    font-weight: 600;
+    margin-bottom: clamp(2rem, 3vw, 6vh);
+}
+
+
+@media screen and (max-width: 850px) {
+    .finalPageMainPart {
+        align-items: unset;
+    }
+    .perfectMatch{
+        font-size: 35px;
+        text-shadow:
+                0 2px 0 #fff,
+                0 4px 18px #fff,
+                0 6px 18px #7b7ab6;
+    }
+    .petal {
+        font-size: 24px;
+    }
+    .finalText {
+        background-color: unset;
+        color: white;
+        font-size: 8px;
+    }
+    .logoResultPage {
+        width: clamp(5rem, 50vw,52vw);
+        margin-bottom: 1.4vh;
+    }
+}

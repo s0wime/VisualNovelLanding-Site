@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    padding: clamp(0.4rem, 5vw, 3rem) clamp(0.5rem, 2vw, 2rem);
+}
+
+.logos-wrapper{
+    display: flex;
+    gap: clamp(1.5rem, 3vw, 1.5rem);
+    width: auto;
+}
+
+.headerLogo {
+    width: 3vw;
+    filter: grayscale(100%);
+}
+
+form{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5vh;
+    flex: 1;
+}
+
+.headerLogo:hover {
+    filter: grayscale(0%);
+    transition: filter 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.header-form-input {
+    padding: 14px 20px;
+    border: 2px solid #bdbdfd;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: 'Brawler', sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #f6f7fb;
+    color: #2a256d;
+    box-shadow: 0 2px 12px #c6caf94b;
+    width:  15vw;
+}
+
+.header-form-input:focus {
+    border-color: #4d00ff;
+    box-shadow: 0 0 10px #4d00ff55;
+    background: #fff;
+}
+
+.header-form-btn {
+    border-radius: 30px;
+    background: linear-gradient(90deg, #4d00ff, #7268d7);
+    color: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(2rem, 2vh, 3vh);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #bdbdfd70;
+    transition: background 0.2s, transform 0.1s;
+    width: auto;
+}
+
+.header-form-btn:hover,
+.header-form-btn:focus {
+    background: linear-gradient(90deg, #7268d7, #4d00ff);
+    transform: scale(1.04);
+}
+
+.already-submitted {
+    display: flex;
+    align-items: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(1rem, 2vh, 3vh);
+    margin-left: 10vw;
+    text-align: center;
+    texx-shadow: var(  )
+}
+
+@media screen and (max-width: 850px) {
+    .header-form-input {
+        min-width: 120px;
+        font-size: 1rem;
+        padding: 10px 14px;
+    }
+    .header-form-btn {
+        padding: 10px 20px;
+        /*font-size: 0.95rem;*/
+    }
+    .headerLogo {
+        width: clamp(3vw, 5vw, 6vw);
+    }
+    .logos-wrapper {
+        gap: 2vw;
+        margin-bottom: 1vh;
+    }
+}

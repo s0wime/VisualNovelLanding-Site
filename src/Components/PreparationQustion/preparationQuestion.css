@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap');
+
+.preparation-question-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.preparation-question-text {
+    font-family: 'Brawler', cursive;
+    font-weight: 600;
+    text-align: center;
+
+    font-size: clamp(2rem, 5vw, 7vw);
+    color: white;
+    margin-top: clamp(2rem, 5vw, 5rem);
+    margin-bottom: clamp(2rem, 5vw, 5rem);
+
+}
+
+.preparation-question-text p {
+    text-shadow: 0px 4px 16px #000, 0 1px 0 #222;
+    letter-spacing: 0.02em;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.age-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.age-select {
+    height: clamp(50px, 6vw, 60px);
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid #4D00FF;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    box-shadow: 0 2px 8px #0002;
+    margin-bottom: clamp(2rem, 10vh, 15vh);
+}
+
+.age-select option {
+    background: #4D00FF;
+    color: #fff;
+    font-family: 'Brawler', sans-serif;
+}
+
+.age-confirm-btn {
+    width: clamp(150px, 20vw, 300px);
+    height: clamp(70px, 6vw, 60px);
+    background: #aba9de;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    font-family: 'Brawler', serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    box-shadow: 0 2px 8px #0002;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.age-confirm-btn:hover,
+.age-confirm-btn:focus {
+    background: #bbb8e7;
+    box-shadow: 0 4px 16px #0004;
+    outline: none;
+}
+
+.genre-gender-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 4vh, 6vh);
+    align-items: center;
+}
+
+.genre-gender-btn {
+    width: clamp(30vw, 32vw, 650px);
+    height: clamp(120px, 6.2vw, 300px);
+    background: transparent;
+    color: #fff;
+    font-family: 'Brawler', serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2vw, 2.2vw);
+    border-radius: 44px;
+    border: 3px solid;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    outline: none;
+    min-width: 160px;
+}
+
+.border-pink {
+    border-color: #e019e0;
+}
+.border-cyan {
+    border-color: #43b5dc;
+}
+.border-orange {
+    border-color: #ff8600;
+}
+
+.border-yellow {
+    border-color: #ffc107;
+}
+
+.genre-gender-btn:focus,
+.genre-gender-btn:hover {
+    box-shadow: 0 0 12px 2px currentColor;
+    filter: brightness(1.05);
+}
+
+.genre-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 20vw, 25vw);
+    margin-top: clamp(2rem, 5vw, 5rem);
+}
+
+.genre-picking-text {
+    text-align: center;
+    color: #fff;
+    font-family: 'Brawler', serif;
+}
+
+.genre-lead {
+    font-weight: 700;
+    font-size: clamp(2rem, 3vh, 4vh);
+    margin-bottom: 1.6rem;
+    text-shadow: 0px 4px 16px #000, 0 1px 0 #222;
+    letter-spacing: 0.03em;
+    line-height: 1.18;
+    margin-bottom: clamp(1rem, 8vh, 12vh);
+}
+
+.genre-action {
+    font-weight: 700;
+    font-size: clamp(2rem, 3vh, 4vh);
+    margin-bottom: 1.6rem;
+    text-shadow: 0px 4px 16px #000, 0 1px 0 #222;
+    letter-spacing: 0.03em;
+    line-height: 1.18;
+}
+
+@media screen and (max-width: 850px){
+    .preparation-question-text {
+        font-size: 32px;
+        margin: 7vw;
+    }
+    .genre-gender-btn {
+        width: 56vw;
+        font-size: clamp(1.5rem, 2vh, 2.5rem);
+    }
+}
+
+
+
+
+

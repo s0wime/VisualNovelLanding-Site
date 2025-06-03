@@ -1,0 +1,70 @@
+.unlockFullEpisode {
+    font-family: 'Brawler', cursive;
+    border-radius: 75px;
+    width: clamp(220px, 24vw, 30vw);
+    min-height: 6vh;
+    color: white;
+    background-color: #FF1F1F;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 18px #ff1f1f33, 0 1px 6px #fff2;
+    animation: pulse-btn 1.7s infinite alternate;
+    transition: box-shadow 0.2s;
+    padding: 1.5vh;
+}
+
+.unlockFullEpisode:active {
+    transform: scale(0.98);
+}
+
+@keyframes pulse-btn {
+    0% { transform: scale(1); box-shadow: 0 2px 18px #ff1f1f33, 0 1px 6px #fff2;}
+    50% { transform: scale(1.07); box-shadow: 0 6px 24px #ff1f1f44, 0 2px 12px #fff3;}
+    100% { transform: scale(1); box-shadow: 0 2px 18px #ff1f1f33, 0 1px 6px #fff2;}
+}
+
+.unlockFullEpisode::after {
+    content: "";
+    position: absolute;
+    top: 0; left: -60%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            rgba(255,255,255,0) 0%,
+            rgba(255,255,255,0.18) 40%,
+            rgba(255,255,255,0.6) 50%,
+            rgba(255,255,255,0.18) 60%,
+            rgba(255,255,255,0) 100%
+    );
+    animation: shimmer-ep 1.7s infinite;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 75px;
+}
+
+@keyframes shimmer-ep {
+    0% { left: -60%; }
+    100% { left: 110%; }
+}
+
+.unlockFullEpisode p {
+    font-size: clamp(1.1rem, 1.6vw, 2.1rem);
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    padding: 0 0.7em;
+    text-shadow: 0 2px 8px #a9000033, 0 1px 0 #fff9;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.18;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .unlockFullEpisode {
+        height: 8vh;
+    }
+}

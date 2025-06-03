@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.coming-soon-banner {
+    margin-top: 1.2vw;
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cs-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(3rem, 3.4vw, 8vw);
+    color: #fff;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-weight: 700;
+    text-shadow:
+            0 3px 8px #4444a9a8,
+            0 6px 8px #11111133;
+    margin-bottom: 2vh;
+    line-height: 1.14;
+}
+
+.cs-subtitle {
+    font-family: 'Brawler', serif;
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-shadow:
+            0 2px 6px #4444a9a8,
+            0 6px 8px #11111133;
+    margin-bottom: 3vh;
+    line-height: 1.5;
+    width: 60%;
+}
+
+.finalSectionGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 10vw, 300px);
+}
+
+
+.finalSectionImg {
+    width: clamp(300px, 25vw, 1000px);
+    border-radius: 75px;
+    height: auto;
+    box-shadow: 0 6px 36px #28288055;
+    background: #332b60;
+    object-fit: cover;
+}
+
+.finalSectionTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.2vw;
+}
+
+.finalSectionText {
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: #fff;
+    text-shadow:
+            0 3px 12px #4444a9a8,
+            0 6px 8px #11111133;
+    letter-spacing: 0.01em;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.emoji {
+    font-size: 1.7em;
+    margin-right: 0.3em;
+    vertical-align: middle;
+}
+
+.one-more-time {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: #aba9de;
+    border: none;
+    border-radius: 80px;
+    width: clamp(9vw, 12vw, 14vw);
+    height: clamp(2vh, 3vw, 6vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+    box-shadow: 0 2px 14px #0002;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    margin-top: 10vh;
+}
+
+.one-more-time:hover,
+.one-more-time:focus {
+    background: #c4c2ed;
+    box-shadow: 0 4px 24px #b7b7ff66;
+    transform: scale(1.03);
+    outline: none;
+}
+
+.finalSectionTeam {
+    font-family: 'Brawler', serif;
+    font-size: clamp(1.1rem, 1vw, 1.3rem);
+    color: #fff;
+    margin-top: 2vw;
+    text-align: right;
+
+    letter-spacing: 0.07em;
+}
+
+@media screen and (max-width: 850px) {
+    .cs-title {
+        font-size: 1.4rem;
+        margin-bottom: 1vh;
+    }
+    .cs-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2vh;
+    }
+    .finalSectionGrid {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+    .finalSectionImageBox {
+        margin-bottom: 1.5vw;
+    }
+    .finalSectionTextBox {
+        align-items: center;
+    }
+    .finalSectionText, .finalSectionTeam {
+        text-align: center;
+    }
+    .finalSectionImg {
+        width: 160px;
+        height: 160px;
+    }
+    .one-more-time{
+        width: 40vw;
+        max-width: 200px;
+        height: auto;
+        min-height: 50px;
+        font-size: 12px;
+    }
+}
