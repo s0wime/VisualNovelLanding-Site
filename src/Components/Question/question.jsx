@@ -3,7 +3,7 @@ import PreparationQuestion from "../PreparationQustion/preparationQuestion.jsx";
 import { useEffect, useState } from "react";
 import MainQuestion from "../MainQuestion/mainQuestion.jsx";
 import Loader from "../Loader/loader.jsx";
-import mainQuestionsBg from "../../assets/main-questions-bg.png";
+import mainQuestionsBg from "../../assets/main-bg.svg";
 import bg from "../../assets/bg.svg";
 import prepBg from "../../assets/bg-upside-down.png";
 
@@ -64,14 +64,16 @@ function Question({
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:3000/api/quizzes/${isBack ? "questionBack" : "answer"}`,
+        `http://localhost:3000/api/quizzes/${
+          isBack ? "questionBack" : "answer"
+        }`,
         {
           method: "POST",
           body: JSON.stringify(body),
           headers: {
             "Content-Type": "application/json",
           },
-        },
+        }
       );
       const result = await response.json();
 
@@ -121,7 +123,7 @@ function Question({
             headers: {
               "Content-Type": "application/json",
             },
-          },
+          }
         );
 
         const result = await response.json();
