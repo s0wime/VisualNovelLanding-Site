@@ -1,6 +1,6 @@
 import "./header.css";
 import instagramLogo from "../../assets/socialMedia/instagramLogo.svg";
-import linkedinLogo from "../../assets/socialMedia/linkedinLogo.svg";
+import linkedinLogo from "../../assets/socialMedia/linkedInLogo.svg";
 import facebookLogo from "../../assets/socialMedia/facebookLogo.svg";
 
 function Header() {
