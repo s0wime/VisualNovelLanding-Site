@@ -7,7 +7,7 @@ function Email({ visitorId }) {
   const [isLoading, setIsLoading] = useState(false);
   const [isErr, setIsErr] = useState(false);
   const [isAlreadySubmitted, setIsAlreadySubmitted] = useState(
-    localManipulation.get("IS_EMAIL_ADDED", true),
+    localManipulation.get("IS_EMAIL_ADDED", true)
   );
 
   async function addEmail(e) {
@@ -16,14 +16,14 @@ function Email({ visitorId }) {
       setIsErr(false);
       setIsLoading(true);
       const response = await fetch(
-        "http://localhost:3000/api/visitors/submitEmail",
+        "https://visualnovellanding-production.up.railway.app/api/visitors/submitEmail",
         {
           method: "POST",
           body: JSON.stringify({ visitorId, email: visitorEmail }),
           headers: {
             "Content-Type": "application/json",
           },
-        },
+        }
       );
 
       if (!response.ok) {

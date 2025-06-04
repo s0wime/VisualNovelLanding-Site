@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 
 export function useVisitorSession() {
   const [visitorId, setVisitorId] = useState(
-    localStorage.getItem("VISITOR_ID"),
+    localStorage.getItem("VISITOR_ID")
   );
   const originalVisitorId = useRef(localStorage.getItem("VISITOR_ID_RESERVED"));
 
   useEffect(() => {
     function isValidUUID(id) {
       return /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(
-        id,
+        id
       );
     }
 
@@ -47,14 +47,14 @@ export function useVisitorSession() {
 
       try {
         const response = await fetch(
-          "http://localhost:3000/api/visitors/create",
+          "https://visualnovellanding-production.up.railway.app/api/visitors/create",
           {
             method: "POST",
             body: JSON.stringify({ visitorId: id }),
             headers: {
               "Content-Type": "application/json",
             },
-          },
+          }
         );
         if (response.status === 201) {
           localStorage.setItem("VISITOR_ID", id);
@@ -77,13 +77,16 @@ export function useVisitorSession() {
 
     async function handleSessionActivity(userId) {
       try {
-        await fetch("http://localhost:3000/api/sessions/activity", {
-          method: "POST",
-          body: JSON.stringify({ visitorId: userId }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        await fetch(
+          "https://visualnovellanding-production.up.railway.app/api/sessions/activity",
+          {
+            method: "POST",
+            body: JSON.stringify({ visitorId: userId }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
       } catch (err) {
         console.log(err);
       }
