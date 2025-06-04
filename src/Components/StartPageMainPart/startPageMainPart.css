@@ -18,10 +18,11 @@
 .mainTitle {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 700;
-    font-size: clamp(2rem, 3vw, 5vw);
+    font-size: clamp(4rem, 4vw, 7rem);
     text-align: center;
     margin-bottom: 4vh;
     letter-spacing: 0.02em;
+    text-shadow: 0px 10px 6px rgb(211, 211, 222);
 }
 
 .mainTextBox {

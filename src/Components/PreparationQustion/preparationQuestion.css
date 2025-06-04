@@ -25,13 +25,6 @@
 .preparation-question-text p {
     text-shadow: 0px 4px 16px #000, 0 1px 0 #222;
     letter-spacing: 0.02em;
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
 }
 
 .age-input-container {
@@ -84,26 +77,32 @@
 
 .genre-gender-buttons {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: clamp(1rem, 4vh, 6vh);
     align-items: center;
+    justify-content: center;
 }
 
 .genre-gender-btn {
     width: clamp(30vw, 32vw, 650px);
     height: clamp(120px, 6.2vw, 300px);
-    background: transparent;
     color: #fff;
-    font-family: 'Brawler', serif;
+    font-family: 'Luckiest Guy';
     font-weight: 700;
-    font-size: clamp(1.2rem, 2vw, 2.2vw);
-    border-radius: 44px;
+    font-size: clamp(2rem, 5vw, 3vh);
+    border-radius: 66px;
     border: 3px solid;
     transition: border-color 0.2s, box-shadow 0.2s;
     cursor: pointer;
     outline: none;
     min-width: 160px;
+    background-color: rgba(140, 131, 204, 0.4);
+    padding: 1vh;
+    text-shadow: #b39bfb 1px 1px 2px;
 }
+
+
 
 .border-pink {
     border-color: #e019e0;
@@ -128,11 +127,15 @@
 .genre-wrapper {
     display: flex;
     justify-content: center;
-    gap: clamp(1rem, 20vw, 25vw);
     margin-top: clamp(2rem, 5vw, 5rem);
 }
 
 .genre-picking-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
     font-family: 'Brawler', serif;
@@ -164,7 +167,7 @@
     }
     .genre-gender-btn {
         width: 56vw;
-        font-size: clamp(1.5rem, 2vh, 2.5rem);
+        font-size: clamp(0.5rem, 3vh, 5rem);
     }
 }
 

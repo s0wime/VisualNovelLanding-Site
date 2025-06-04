@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 
 .coming-soon-banner {
-    margin-top: 1.2vw;
-    margin-bottom: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +8,7 @@
 
 .cs-title {
     font-family: 'Cinzel Decorative', serif;
-    font-size: clamp(3rem, 3.4vw, 8vw);
+    font-size: clamp(3rem, 3.4vw, 4.3rem);
     color: #fff;
     letter-spacing: 0.04em;
     text-align: center;
@@ -46,7 +44,7 @@
 
 
 .finalSectionImg {
-    width: clamp(300px, 25vw, 1000px);
+    width: clamp(300px, 20vw, 800px);
     border-radius: 75px;
     height: auto;
     box-shadow: 0 6px 36px #28288055;
@@ -93,7 +91,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2vh auto;
     box-shadow: 0 2px 14px #0002;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
@@ -116,6 +113,11 @@
     text-align: right;
 
     letter-spacing: 0.07em;
+}
+
+.for-again-btn{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 850px) {

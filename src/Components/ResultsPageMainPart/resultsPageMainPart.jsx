@@ -2,8 +2,6 @@ import "./resultsPageMainPart.css";
 import resultImg2 from "../../assets/result2Img.jpg";
 import UnlockFullEpisode from "../Buttons/UnlockFullEpisode/unclockFullEpisode.jsx";
 import TryForFree from "../Buttons/TryForFree/tryForFree.jsx";
-import { useEffect } from "react";
-import bg from "../../assets/bg.svg";
 
 function ResultsPageMainPart({
   visitorId,
@@ -13,14 +11,6 @@ function ResultsPageMainPart({
   isPhone,
   setIsPressedFullVersionBtn,
 }) {
-  useEffect(() => {
-    // document.body.style.backgroundImage = `url(${bg})`;
-    // document.body.style.backgroundSize = "cover";
-    // document.body.style.backgroundRepeat = "no-repeat";
-    // document.body.style.backgroundPosition = "center";
-    // window.location.reload();
-  }, []);
-
   return (
     <div className="finalPageMainPart">
       {!isPhone && (

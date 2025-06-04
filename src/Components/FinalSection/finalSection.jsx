@@ -1,8 +1,9 @@
 import "./finalSection.css";
 import logo from "../../assets/logo.svg";
 import localManipulation from "../../utils/localManipulation.js";
+import Email from "../Email/email.jsx";
 
-function FinalSection() {
+function FinalSection({ visitorId }) {
   return (
     <>
       <div className="coming-soon-banner">
@@ -35,23 +36,26 @@ function FinalSection() {
             STAY TUNED — EXCITING UPDATES ARE <br /> COMING SOON!
           </div>
           <div className="finalSectionTeam">— PARALLEL HEARTS TEAM</div>
+          <Email visitorId={visitorId} />
         </div>
       </div>
-      <button
-        className="one-more-time"
-        onClick={() => {
-          localManipulation.destroy([
-            "isPressedFullVersionBtn",
-            "IS_QUIZ_FINISHED",
-            "FINAL_TITLE",
-            "FINAL_MESSAGE",
-            "FINAL_GENRE",
-          ]);
-          window.location.reload();
-        }}
-      >
-        One more Time?
-      </button>
+      <div className="for-again-btn">
+        <button
+          className="one-more-time"
+          onClick={() => {
+            localManipulation.destroy([
+              "isPressedFullVersionBtn",
+              "IS_QUIZ_FINISHED",
+              "FINAL_TITLE",
+              "FINAL_MESSAGE",
+              "FINAL_GENRE",
+            ]);
+            window.location.reload();
+          }}
+        >
+          One more Time?
+        </button>
+      </div>
     </>
   );
 }

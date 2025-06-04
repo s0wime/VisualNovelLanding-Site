@@ -62,10 +62,7 @@ function App() {
         />
       ) : (
         <>
-          <Header
-            visitorId={visitorId}
-            isPressedFullVersionBtn={isPressedFullVersionBtn}
-          />
+          <Header />
           {isQuizFinished ? (
             <>
               {!isPressedFullVersionBtn ? (
@@ -80,7 +77,7 @@ function App() {
                   />
                 </div>
               ) : (
-                <FinalSection />
+                <FinalSection visitorId={visitorId} />
               )}
             </>
           ) : (

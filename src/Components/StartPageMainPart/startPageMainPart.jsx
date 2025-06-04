@@ -1,9 +1,7 @@
 import "./startPageMainPart.css";
 import logo from "../../assets/logo.svg";
 
-export default function StartPageMainPart({isPhone}) {
-
-
+export default function StartPageMainPart({ isPhone }) {
   return (
     <div className="startPageMainPart">
       <div className="mainIconBox">
@@ -12,7 +10,8 @@ export default function StartPageMainPart({isPhone}) {
 
       <div className="mainTextBox">
         <h1 className="mainTitle">
-          STORIES OF PARALLEL HEARTS
+          STORIES OF PARALLEL
+          <br /> HEARTS
         </h1>
 
         <div className="mainDescription">
@@ -21,8 +20,9 @@ export default function StartPageMainPart({isPhone}) {
             each one?
           </p>
           <p>
-            {isPhone && '💫'}In one world, sparks fly over coffee. {isPhone && '🔥'}In another — secrets burn
-            behind enemy lines. {isPhone && '🌌'}Somewhere far away, even machines start to feel{" "}
+            {isPhone && "💫"}In one world, sparks fly over coffee.{" "}
+            {isPhone && "🔥"}In another — secrets burn behind enemy lines.{" "}
+            {isPhone && "🌌"}Somewhere far away, even machines start to feel{" "}
             <span role="img" aria-label="heart">
               🩶
             </span>

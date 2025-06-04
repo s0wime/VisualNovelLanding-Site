@@ -22,14 +22,10 @@
 
 
 .quiz-answer:hover, .quiz-answer:focus {
-    background: #5e599c;
-    box-shadow: 0 4px 20px #4d00ff22;
+    box-shadow: 0 0 12px 2px #4D00FF99;
+    filter: brightness(1.05);
 }
 
-@keyframes pulse-glow {
-    0% { box-shadow: 0 0 12px #b3b3f9, 0 2px 12px #0002; }
-    100% { box-shadow: 0 0 32px #4D00FF99, 0 2px 12px #0002; }
-}
 
 @media screen and (max-width: 850px) {
     .quiz-answer {

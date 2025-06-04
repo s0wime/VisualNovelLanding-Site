@@ -12,7 +12,7 @@
 
 .question-text {
     margin-top: clamp(2rem, 3vw, 4rem);
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(3rem, 5vw, 10rem);
 }
 
 .answers-wrapper {
@@ -34,5 +34,9 @@
 @media screen and (max-width: 850px) {
     .answers-wrapper {
         gap: clamp(0.5vh, 2vh, 3vh);
+    }
+
+    .question-text{
+        font-size: 56px;
     }
 }

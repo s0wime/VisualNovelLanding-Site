@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import localManipulation from "../utils/localManipulation.js";
 
 export function useVisitorSession() {
   const [visitorId, setVisitorId] = useState(
